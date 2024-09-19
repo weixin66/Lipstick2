@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/Pic_search.css')}}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="{{url_for('static', filename='/js/Text_Search.js')}}"></script>
+</head>
+<body style="margin-right:20px ;margin-left: 20px;">
+    <h1 class="header">挑選品牌色號，沒有的話請使用其他搜尋方法</h1>
+    <br/>
+    <form action="/passtext" method="POST" class="form">
+        <div class="update">
+            <div id="allBrand" style="display: none;">{{brand}}</div>
+            <div id="theBrandLips" style="display: none;">{{lips}}</div>
+            <select id="brand-list" ></select>
+            <select id="color-list" name="confirmColor"></select>
+            <div id="color" class="C"></div>
+        </div>
+        <button type="submit">submit</button>
+    </form>
+    
+</body>
+</html>

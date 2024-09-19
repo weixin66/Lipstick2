@@ -1,0 +1,36 @@
+.header{
+    flex-wrap: nowrap;
+    /* flexbox setup */
+    display: flex;
+    justify-content:center;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+.update{
+    /* flexbox setup */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.colorArea{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+.P{
+    width: 100px;height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.C{
+    width: 500px;height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
